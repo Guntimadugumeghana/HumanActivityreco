@@ -81,59 +81,7 @@ LABELS = [
 
 ```
 
-## Let's start by downloading the data:
-
-
-```python
-# Note: Linux bash commands start with a "!" inside those "ipython notebook" cells
-
-DATA_PATH = "data/"
-
-!pwd && ls
-os.chdir(DATA_PATH)
-!pwd && ls
-
-!python download_dataset.py
-
-!pwd && ls
-os.chdir("..")
-!pwd && ls
-
-DATASET_PATH = DATA_PATH + "UCI HAR Dataset/"
-print("\n" + "Dataset is now located at: " + DATASET_PATH)
-
-```
-
-    /home/ubuntu/pynb/LSTM-Human-Activity-Recognition
-    data	 LSTM_files  LSTM_OLD.ipynb  README.md
-    LICENSE  LSTM.ipynb  lstm.py	     screenlog.0
-    /home/ubuntu/pynb/LSTM-Human-Activity-Recognition/data
-    download_dataset.py  source.txt
-
-    Downloading...
-    --2017-05-24 01:49:53--  https://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.zip
-    Resolving archive.ics.uci.edu (archive.ics.uci.edu)... 128.195.10.249
-    Connecting to archive.ics.uci.edu (archive.ics.uci.edu)|128.195.10.249|:443... connected.
-    HTTP request sent, awaiting response... 200 OK
-    Length: 60999314 (58M) [application/zip]
-    Saving to: ‘UCI HAR Dataset.zip’
-
-    100%[======================================>] 60,999,314  1.69MB/s   in 38s    
-
-    2017-05-24 01:50:31 (1.55 MB/s) - ‘UCI HAR Dataset.zip’ saved [60999314/60999314]
-
-    Downloading done.
-
-    Extracting...
-    Extracting successfully done to /home/ubuntu/pynb/LSTM-Human-Activity-Recognition/data/UCI HAR Dataset.
-    /home/ubuntu/pynb/LSTM-Human-Activity-Recognition/data
-    download_dataset.py  __MACOSX  source.txt  UCI HAR Dataset  UCI HAR Dataset.zip
-    /home/ubuntu/pynb/LSTM-Human-Activity-Recognition
-    data	 LSTM_files  LSTM_OLD.ipynb  README.md
-    LICENSE  LSTM.ipynb  lstm.py	     screenlog.0
-
-    Dataset is now located at: data/UCI HAR Dataset/
-
+## download the data:
 
 ## Preparing dataset:
 
